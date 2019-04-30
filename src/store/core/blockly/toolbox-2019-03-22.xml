@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;"> 
+  <category name="{MSG.CATEGORY_SETTING}" colour="{COLOR.COLOR_SETTING}">
+    <hidden style="hidden:true;">
+      <block type="btn">
+        <value name="sec">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="btn_upload">
+        <value name="sec">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+    </hidden>
+    <block type="set_speed">
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_acceleration">
+      <value name="acceleration">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_angle_speed">
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_angle_acceleration">
+      <value name="acceleration">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_collision_sensitivity">
+      <value name="sensitivity">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_teach_sensitivity">
+      <value name="sensitivity">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_tcp_load">
+      <value name="weight">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="center_of_gravity_x">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="center_of_gravity_y">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="center_of_gravity_z">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="set_tcp_offset">
+      <value name="x">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="y">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="z">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="roll">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="pitch">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+      <value name="yaw">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="save_config">
+    </block>
+    <block type="restore_default_config">
+    </block>
+  </category>
+  <category name="{MSG.CATEGORY_MOTION}" colour="{COLOR.COLOR_MOTION}">
+    <block type="sleep">
+      <value name="sec">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="motion_stop" /> 
+    <block type="reset" />
+    <!-- <block type="studio_play_recording"></block>-->
+    <!-- <block type="move_to">
+      <value name="position">
+        <shadow type="position">
+          <value name="x">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="y">
+            <shadow type="math_number">
+              <field name="NUM">150</field>
+            </shadow>
+          </value> 
+          <value name="z">
+            <shadow type="math_number">
+              <field name="NUM">150</field>
+            </shadow>
+          </value> 
+          <value name="a">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="b">
+            <shadow type="math_number">
+              <field name="NUM">150</field>
+            </shadow>
+          </value> 
+          <value name="c">
+            <shadow type="math_number">
+              <field name="NUM">150</field>
+            </shadow>
+          </value>
+        </shadow> 
+        <block type="position">
+          <value name="x">
+            <shadow type="math_number">
+              <field name="NUM">201.5</field>
+            </shadow>
+          </value> 
+          <value name="y">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="z">
+            <shadow type="math_number">
+              <field name="NUM">140.5</field>
+            </shadow>
+          </value> 
+          <value name="a">
+            <shadow type="math_number">
+              <field name="NUM">-180</field>
+            </shadow>
+          </value> 
+          <value name="b">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="c">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+    </block> -->
+    <!-- <block type="move">
+      <field name="orientation">forward</field> 
+      <value name="value">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block> -->
+    <block type="move_7">
+      <value name="position7">
+        <shadow type="position7">
+          <value name="i">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="j">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="k">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="l">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="m">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="n">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="o">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </shadow> 
+        <block type="position7">
+          <value name="i">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="j">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="k">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="l">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="m">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="n">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="o">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <value name="wait">
+            <shadow type="logic_boolean">
+              <field name="BOOL">TRUE</field>
+            </shadow>
+          </value>
+          <value name="btn">
+            <block type="btn"/>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block type="move">
+      <field name="orientation">forward</field>
+      <value name="value">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+      <value name="wait">
+        <shadow type="logic_boolean">
+          <field name="BOOL">TRUE</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="move_arc_to">
+      <value name="position">
+        <shadow type="position_r">
+          <value name="x">
+            <shadow type="math_number">
+              <field name="NUM">201.5</field>
+            </shadow>
+          </value> 
+          <value name="y">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="z">
+            <shadow type="math_number">
+              <field name="NUM">140.5</field>
+            </shadow>
+          </value> 
+          <value name="a">
+            <shadow type="math_number">
+              <field name="NUM">180</field>
+            </shadow>
+          </value> 
+          <value name="b">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="c">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <value name="r">
+            <shadow type="math_number">
+              <field name="NUM">-1</field>
+            </shadow>
+          </value>
+        </shadow> 
+        <block type="position_r">
+          <value name="x">
+            <shadow type="math_number">
+              <field name="NUM">201.5</field>
+            </shadow>
+          </value> 
+          <value name="y">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="z">
+            <shadow type="math_number">
+              <field name="NUM">140.5</field>
+            </shadow>
+          </value> 
+          <value name="a">
+            <shadow type="math_number">
+              <field name="NUM">180</field>
+            </shadow>
+          </value> 
+          <value name="b">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value> 
+          <value name="c">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+          <value name="r">
+            <shadow type="math_number">
+              <field name="NUM">-1</field>
+            </shadow>
+          </value>
+          <value name="wait">
+            <shadow type="logic_boolean">
+              <field name="BOOL">TRUE</field>
+            </shadow>
+          </value>
+          <value name="btn">
+            <block type="btn"/>
+          </value>
+        </block>
+      </value>
+    </block> 
+  </category> 
+  <category name="{MSG.CATEGORY_FITTING}" colour="{COLOR.COLOR_FITTING}">
+    <!-- <block type="gripper_mode"></block>
+    <block type="gripper_enable">
+      <value name="condition">
+        <shadow type="logic_boolean">
+          <field name="BOOL">TRUE</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="gripper_speed">
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="gripper_position">
+      <value name="pos">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block> -->
+    <block type="gpio_get_digital">
+      <field name="io">1</field>
+    </block>
+    <block type="gpio_set_digital">
+      <field name="io">1</field>
+      <value name="value">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="gpio_get_analog">
+      <field name="io">1</field>
+    </block>
+    <block type="event_gpio_digital">
+      <field name="io">1</field>
+      <field name="trigger">HIGH</field>
+    </block>
+    <block type="gripper_set">
+      <value name="pos">
+        <shadow type="math_number">
+          <field name="NUM">500</field>
+        </shadow>
+      </value>
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">8000</field>
+        </shadow>
+      </value>
+      <value name="wait">
+        <shadow type="logic_boolean">
+          <field name="BOOL">TRUE</field>
+        </shadow>
+      </value>
+      <value name="btn">
+        <block type="btn"/>
+      </value>
+    </block>
+  </category>
+  <category name="{MSG.CATEGORY_APP}" colour="{COLOR.COLOR_APP}">
+    <block type="studio_run_python">
+      <value name="ide">
+        <shadow type="text">
+          <field name="text">1</field>
+        </shadow>
+      </value>
+    </block> 
+    <block type="studio_play_recording">
+      <value name="record">
+        <shadow type="text">
+          <field name="text">1</field>
+        </shadow>
+      </value>
+    </block> 
+    <block type="studio_copy_recording">
+      <value name="record">
+        <shadow type="text">
+          <field name="text">1</field>
+        </shadow>
+      </value>
+    </block> 
+    <block type="studio_run_app">
+      <value name="other">
+        <shadow type="text">
+          <field name="text">1</field>
+        </shadow>
+      </value>
+    </block>
+    <!-- <block type="studio_run_file">
+      <value name="file">
+        <shadow type="text">
+          <field name="text">1</field>
+        </shadow>
+      </value>
+      <value name="btn_upload">
+        <block type="btn_upload"/>
+      </value>
+    </block> -->
+  </category>
+  <category name="{MSG.CATEGORY_INPUT}" colour="{COLOR.COLOR_INPUT}">
+    <block type="condition_key_pressed"/> 
+    <block type="event_keypressed"/> 
+    <block type="event_keypressed_stop"/>
+  </category> 
+  <category name="{MSG.CATEGORY_LOGIC}" colour="{COLOR.COLOR_LOGIC}">
+    <category name="{MSG.CATEGORY_MORE}" colour="{COLOR.COLOR_LOGIC}">
+      <block type="logic_null"/> 
+      <block type="logic_ternary"/> 
+      <block type="logic_boolean">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </category> 
+    <block type="wait">
+      <value name="sec">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block> 
+    <block type="wait_until">
+      <value name="condition">
+        <shadow type="logic_boolean">
+          <field name="BOOL">TRUE</field>
+        </shadow>
+      </value>
+    </block> 
+    <block type="controls_if"/> 
+    <block type="logic_compare">
+      <field name="OP">EQ</field>
+    </block> 
+    <block type="logic_operation">
+      <field name="OP">AND</field>
+    </block> 
+    <block type="logic_negate"/>
+  </category> 
+  <category name="{MSG.CATEGORY_LOOP}" colour="{COLOR.COLOR_LOOP}">
+    <category name="{MSG.CATEGORY_MORE}" colour="{COLOR.COLOR_LOOP}">
+      <block type="controls_for">
+        <field name="VAR">i</field> 
+        <value name="FROM">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value> 
+        <value name="TO">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value> 
+        <value name="BY">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block> 
+      <block type="controls_forEach">
+        <field name="VAR">j</field>
+      </block>
+    </category> 
+    <block type="loop_run_forever"/> 
+    <block type="controls_repeat_ext">
+      <value name="TIMES">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block> 
+    <block type="controls_whileUntil">
+      <field name="MODE">WHILE</field>
+    </block> 
+    <block type="loop_break"></block>
+  </category> 
+  <category name="{MSG.CATEGORY_MATH}" colour="{COLOR.COLOR_MATH}">
+    <category name="{MSG.CATEGORY_MORE}" colour="{COLOR.COLOR_MATH}">
+      <block type="math_round">
+        <field name="OP">ROUND</field> 
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">3.1</field>
+          </shadow>
+        </value>
+      </block> 
+      <block type="math_single">
+        <field name="OP">ROOT</field> 
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">9</field>
+          </shadow>
+        </value>
+      </block> 
+      <block type="math_trig">
+        <field name="OP">SIN</field> 
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">45</field>
+          </shadow>
+        </value>
+      </block> 
+      <block type="math_constant">
+        <field name="CONSTANT">PI</field>
+      </block> 
+      <block type="math_on_list">
+        <mutation op="SUM"/> 
+        <field name="OP">SUM</field>
+      </block> 
+      <block type="math_modulo">
+        <value name="DIVIDEND">
+          <shadow type="math_number">
+            <field name="NUM">64</field>
+          </shadow>
+        </value> 
+        <value name="DIVISOR">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+      </block> 
+      <block type="math_constrain">
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value> 
+        <value name="LOW">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value> 
+        <value name="HIGH">
+          <shadow type="math_number">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+      </block> 
+      <block type="math_random_float"/>
+    </category> 
+    <block type="math_number">
+      <field name="NUM">0</field>
+    </block> 
+    <block type="math_number_property">
+      <mutation divisor_input="false"/> 
+      <field name="PROPERTY">EVEN</field> 
+      <value name="NUMBER_TO_CHECK">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block> 
+    <block type="math_arithmetic">
+      <field name="OP">ADD</field> 
+      <value name="A">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value> 
+      <value name="B">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block> 
+    <block type="math_random_int">
+      <value name="FROM">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value> 
+      <value name="TO">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+  <!-- <category name="{MSG.CATEGORY_TEXT}" colour="{COLOR.COLOR_TEXT}">
+    <block type="tool_remark" />
+    <block type="tool_message" />
+  </category> -->
+  <sep></sep>
+  <category name="{MSG.CATEGORY_ADVANCE}" colour="{COLOR.COLOR_ADVANCE}">
+    <category name="{MSG.CATEGORY_TEXT}" colour="{COLOR.COLOR_TEXT}">
+        <block type="tool_remark" />
+        <block type="tool_comment" />
+        <block type="tool_message" />
+        <!-- <block type="text_charAt">
+            <mutation at="true"></mutation>
+            <field name="WHERE">FROM_START</field>
+            <value name="VALUE">
+                <block type="variables_get">
+                    <field name="VAR">text</field>
+                </block>
+            </value>
+        </block>
+        <block type="text">
+            <field name="TEXT"></field>
+        </block>
+        <block type="text_append">
+            <field name="VAR">item</field>
+            <value name="TEXT">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="text_length">
+            <value name="VALUE">
+                <shadow type="text">
+                    <field name="TEXT">abc</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="text_isEmpty">
+            <value name="VALUE">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="text_indexOf">
+            <field name="END">FIRST</field>
+            <value name="VALUE">
+                <block type="variables_get">
+                    <field name="VAR">text</field>
+                </block>
+            </value>
+            <value name="FIND">
+                <shadow type="text">
+                    <field name="TEXT">abc</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="text_join">
+            <mutation items="2"></mutation>
+        </block>
+        <block type="text_getSubstring">
+            <mutation at1="true" at2="true"></mutation>
+            <field name="WHERE1">FROM_START</field>
+            <field name="WHERE2">FROM_START</field>
+            <value name="STRING">
+                <block type="variables_get">
+                    <field name="VAR">text</field>
+                </block>
+            </value>
+        </block>
+        <block type="text_changeCase">
+            <field name="CASE">UPPERCASE</field>
+            <value name="TEXT">
+                <shadow type="text">
+                    <field name="TEXT">abc</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="text_trim">
+            <field name="MODE">BOTH</field>
+            <value name="TEXT">
+                <shadow type="text">
+                    <field name="TEXT">abc</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="text_print">
+            <value name="TEXT">
+                <shadow type="text">
+                    <field name="TEXT">abc</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="text_prompt_ext">
+            <mutation type="TEXT"></mutation>
+            <field name="TYPE">TEXT</field>
+            <value name="TEXT">
+                <shadow type="text">
+                    <field name="TEXT">abc</field>
+                </shadow>
+            </value>
+        </block> -->
+    </category>
+    <category name="{MSG.CATEGORY_LIST}" colour="{COLOR.COLOR_LIST}">
+        <block type="lists_indexOf">
+            <field name="END">FIRST</field>
+            <value name="VALUE">
+                <block type="variables_get">
+                    <field name="VAR">list</field>
+                </block>
+            </value>
+        </block>
+        <block type="lists_create_with">
+            <mutation items="0"></mutation>
+        </block>
+        <block type="lists_repeat">
+            <value name="NUM">
+                <shadow type="math_number">
+                    <field name="NUM">5</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="lists_length"></block>
+        <block type="lists_isEmpty"></block>
+        <block type="lists_create_with">
+            <mutation items="3"></mutation>
+        </block>
+        <block type="lists_getIndex">
+            <mutation statement="false" at="true"></mutation>
+            <field name="MODE">GET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="VALUE">
+                <block type="variables_get">
+                    <field name="VAR">list</field>
+                </block>
+            </value>
+        </block>
+        <block type="lists_setIndex">
+            <mutation at="true"></mutation>
+            <field name="MODE">SET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="LIST">
+                <block type="variables_get">
+                    <field name="VAR">list</field>
+                </block>
+            </value>
+        </block>
+        <block type="lists_getSublist">
+            <mutation at1="true" at2="true"></mutation>
+            <field name="WHERE1">FROM_START</field>
+            <field name="WHERE2">FROM_START</field>
+            <value name="LIST">
+                <block type="variables_get">
+                    <field name="VAR">list</field>
+                </block>
+            </value>
+        </block>
+        <block type="lists_split">
+            <mutation mode="SPLIT"></mutation>
+            <field name="MODE">SPLIT</field>
+            <value name="DELIM">
+                <shadow type="text">
+                    <field name="TEXT">,</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="lists_sort">
+            <field name="TYPE">NUMERIC</field>
+            <field name="DIRECTION">1</field>
+        </block>
+    </category>
+    <category name="{MSG.CATEGORY_VARIABLE}" colour="{COLOR.COLOR_VARIABLE}" custom="VARIABLE"></category>
+    <category name="{MSG.CATEGORY_FUNCTION}" colour="{COLOR.COLOR_FUNCTION}" custom="PROCEDURE"></category>
+  </category>
+</xml>

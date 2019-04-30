@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_developers</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="output_icons" transform="translate(-511.000000, -182.000000)" fill="#444444">
+            <g id="btom_icons" transform="translate(124.000000, 174.000000)">
+                <g id="icon_developers" transform="translate(387.000000, 8.000000)">
+                    <g transform="translate(6.000000, 11.000000)">
+                        <path d="M52.0504075,4.97903929 L52.0504075,41.4643936 L3.94959246,41.4643936 L3.94959246,4.97903929 L52.0504075,4.97903929 Z M2.61869432,0 C1.50860271,0 0.608695652,0.898868214 0.608695652,2.00106534 L0.608695652,2.09090909 L0.608695652,43.9090909 L0.608695652,43.9989347 C0.608695652,45.1040925 1.5076856,46 2.61869432,46 L3.09881423,46 L52.9011858,46 L53.3813057,46 C54.4913973,46 55.3913043,45.1011318 55.3913043,43.9989347 L55.3913043,43.9090909 L55.3913043,2.09090909 L55.3913043,2.00106534 C55.3913043,0.89590747 54.4923144,0 53.3813057,0 L52.9011858,0 L3.09881423,0 L2.61869432,0 Z" id="Rectangle-28" fill-rule="nonzero"></path>
+                        <polygon id="Rectangle-29" points="1.78918264 15.3333333 1.78918264 10.2222222 53.6332917 10.2222222 53.6332917 15.3333333"></polygon>
+                        <g id="arrows" transform="translate(9.739130, 20.444444)">
+                            <path d="M10.8843822,4.17348603 L3.58329504,4.17348603 L3.58329504,11.9645862 L2.04463617,11.9645862 L2.04463617,2.570379 L10.8843822,2.570379 L10.8843822,4.17348603 Z" id="Combined-Shape" transform="translate(6.464509, 7.267483) rotate(-45.000000) translate(-6.464509, -7.267483) "></path>
+                            <path d="M32.7182165,4.17348603 L25.4171293,4.17348603 L25.4171293,11.9645862 L23.8784705,11.9645862 L23.8784705,2.570379 L32.7182165,2.570379 L32.7182165,4.17348603 Z" id="Combined-Shape" transform="translate(28.298343, 7.267483) scale(-1, 1) rotate(-45.000000) translate(-28.298343, -7.267483) "></path>
+                            <rect id="Rectangle-29" transform="translate(17.547771, 7.993481) rotate(-330.000000) translate(-17.547771, -7.993481) " x="16.7175842" y="0.323308181" width="1.66037335" height="15.3403455"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/
+/src/assets/lib-external/*
+/src/assets/lib/*
+/src/lib/*
+/src/components/params/
+/src/store/core/global_constant.js
+/src/store/core/blockly/*

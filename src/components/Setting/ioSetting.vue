@@ -1,0 +1,182 @@
+<template>
+  <div class="com-module-wrapper motion-wrapper">
+   <div class="com-setting-block-wrapper ">
+    <h3 class="title">{{ $t('gripper') }}</h3>
+    <div  class="acce-slider-wrapper"><span>{{ $t('gripperTip') }}</span>
+       <toggle-button
+       
+        style="font-size: 10px;margin-left: 266px;" 
+        :color="{checked: '#c1521e', unchecked: '#D3D5DB'}"
+        v-model="isInsallGripper"
+        :sync="true"
+        :labels="{checked: $t('yes'), unchecked: $t('no')}"
+        :width="60" :height="20" 
+        />
+    </div>
+    <div class="acce-slider-wrapper">
+      <span class="speed">{{ $t('speed') }}</span> 
+      <div class="speed-slider">
+        <!--<el-slider show-input
+        v-model="gripper.speed" 
+        @change="setGripperSpeed" 
+        :step="gripper.step" 
+        :max="gripper.max" 
+        :min="gripper.min"
+        :disabled="!isInsallGripper"
+        ></el-slider> -->
+        <input 
+        type="range"
+          v-model="gripper.speed" 
+        @change="setGripperSpeed" 
+        :step="gripper.step" 
+        :max="gripper.max" 
+        :min="gripper.min"
+        :disabled="!isInsallGripper"/>
+      </div>
+    </div>
+   </div>
+
+   <div class="com-setting-block-wrapper ">
+    <h3 class="title">{{ $t('SuctionCup') }}</h3>
+     <div><span>{{ $t('suctionTip') }}</span>
+      <toggle-button
+        class="lock-toggle"
+        
+        style="font-size: 10px;margin-left: 266px;" 
+        :color="{checked: '#c1521e', unchecked: '#D3D5DB'}"
+        v-model="isInsallSuction"
+        :sync="true"
+        :labels="{checked: $t('yes'), unchecked: $t('no')}"
+        :width="60" :height="20" />
+    </div>
+   </div>
+
+  </div>
+</template>
+
+<script>
+const model = window.GlobalUtil.model;
+export default {
+  i18n: {
+    messages: {
+      en: {
+       gripper: "Gripper",
+       gripperTip: "是否安装机械爪",
+       suctionTip: "是否安装吸头",
+       speed: "Speed",
+       SuctionCup: "Suction Cup",
+       yes: "Yes",
+       no: "No",
+      },
+      cn: {
+        gripper: "机械爪",
+        gripperTip: "是否安装机械爪",
+        suctionTip: "是否安装吸头",
+        speed: "速度",
+        SuctionCup: "吸头",
+        yes: "Yes",
+        no: "No",
+      },
+    },
+  },
+  data() {
+    return {
+      model: model,
+      gripper: {
+        speed: model.robot.state.local.gripper.speed,
+        step: 1,
+        max: 1000,
+        min:1,
+      },
+      isInstall: {
+        gripper: false,
+        SuctionCup: false,
+      },
+    };
+  },
+  mounted() {
+    console.log("isInsallGripper",this.isInsallGripper);
+     console.log("isInsallSuction",this.isInsallSuction);
+  },
+  methods: {
+   installTool() {
+
+    if(this.isInstall.gripper) {
+      this.isInstall.gripper = false;
+    }else {
+      this.isInstall.gripper = false;
+    }
+     console.log("this.isShowInControl.gripper",this.isInstall.gripper)
+     if(this.isInstall.SuctionCup === true) {
+      this.isInstall.SuctionCup = false;
+     }
+    
+   }, 
+   setGripperSpeed(evt) {
+      // console.log('gripper speed:', this.model.robot.state.remote.gripper.speed);
+      window.CommandsRobotSocket.setGripperSpeed(this.model.robot.state.local.gripper.speed, (dict) => {
+        if (dict.code === 0) {
+          this.model.robot.state.remote.gripper.speed = this.model.robot.state.local.gripper.speed;
+        }
+        else {
+          this.model.robot.state.local.gripper.speed = this.model.robot.state.remote.gripper.speed;
+        }
+      });
+    },
+  },
+  computed: {
+    isInsallGripper: {
+      get() {
+        return this.isInstall.gripper
+      },
+      set(){
+        if(this.isInsallSuction === true) {
+          this.isInsallSuction = false;
+        }
+        this.isInstall.gripper = !this.isInstall.gripper
+      }
+    },
+    isInsallSuction: {
+      get() {
+        return this.isInstall.SuctionCup
+      },
+      set(){
+        if(this.isInsallGripper === true) {
+          this.isInsallGripper = false;
+        }
+        this.isInstall.SuctionCup = !this.isInstall.SuctionCup;
+      }
+    }
+    
+  },
+  watched: {
+
+  }
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+  .motion-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .acce-slider-wrapper {
+      display: flex;
+      align-items: center;
+      margin:16px 0;
+      
+      .speed {
+        padding-right:30px;
+      }
+      .speed-slider {
+        width: 500px;
+
+      }
+    }
+
+
+   
+  }
+</style>
